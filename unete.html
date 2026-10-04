@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Sella el Pacto - Winter Arc</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <img src="img/logo.jpg" alt="Logo Winter Arc" class="logo-header">
+        <h1>Winter Arc</h1>
+        <p>Los 90 días de aislamiento, hipertrofia y disciplina absoluta</p>
+    </header>
+
+    <!--Navegación entre los diferentes HTML-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pilares.html">Los Pilares</a></li>
+            <li><a href="rutinas.html">Rutinas y Fases</a></li>
+            <li><a href="unete.html">Sella el Pacto</a></li>
+        </ul>
+    </nav>
+
+    <!--Navegación dentro del HTML unete-->
+    <div class="indice-interno">
+        <p><strong>Navegación del pacto:</strong></p>
+        <ul>
+            <li><a href="#info-compromiso">Compromiso</a></li>
+            <li><a href="#formulario">Formulario de Registro</a></li>
+        </ul>
+    </div>
+
+    <!--Main-->
+    <main>
+
+        <section id="info-compromiso">
+            <h2>Entra en el Registro de Atletas</h2>
+            <p>Rellena este formulario para oficializar tu inicio en el Modo Fantasma, enviar tus dudas de entrenamiento o solicitar feedback sobre tus marcas actuales.</p>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulario de Compromiso Gymbro</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Ficha del Atleta</legend>
+
+                    <p>
+                        <label for="nombre">Nombre / Apodo en el gimnasio:</label><br>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Marcos 'Heavy Duty'">
+                    </p>
+
+                    <p>
+                        <label for="email">Correo electrónico de contacto:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="atleta@ejemplo.com">
+                    </p>
+
+                    <p>
+                        <label for="experiencia">Tiempo entrenando:</label><br>
+                        <select id="experiencia" name="experiencia">
+                            <option value="novato">Novato (&lt; 6 meses)</option>
+                            <option value="intermedio">Intermedio (1 a 3 años)</option>
+                            <option value="avanzado">Avanzado (&gt; 3 años)</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Meta Principal del Winter Arc</legend>
+
+                    <p>Selecciona tu objetivo prioritario:</p>
+                    <p>
+                        <input type="radio" id="volumen" name="objetivo" value="volumen" checked>
+                        <label for="volumen">Ganancia de masa muscular (Bulking)</label><br>
+
+                        <input type="radio" id="fuerza" name="objetivo" value="fuerza">
+                        <label for="fuerza">Aumento de marcas / Récords (PRs)</label><br>
+
+                        <input type="radio" id="disciplina" name="objetivo" value="disciplina">
+                        <label for="disciplina">Crear el hábito y la disciplina</label>
+                    </p>
+                    
+                    <p>
+                        <label for="mensaje">Cuéntanos tus metas o PRs actuales:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Marca actual en Banca, Sentadilla, Peso Muerto o tus dudas de dieta..."></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto">Acepto no buscar excusas durante los 90 días del Winter Arc.</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Sellar Pacto</button>
+                    <button type="reset">Reiniciar Formulario</button>
+                </p>
+            </form>
+
+        </section>
+
+    </main>
+
+    <!--Footer de la página (esto se repite en todos los HTML)-->
+    <footer>
+        <p>&copy; 2026 Winter Arc - Proyecto Mejora Personal</p>
+    </footer>
+
+</body>
+</html>
